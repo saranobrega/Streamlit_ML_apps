@@ -4,8 +4,6 @@ from plot import plot_results, plot_wind_speed_vs_active_power
 from preprocessing import split_dataframe_by_wt, delete_ap_nan, remove_outliers_from_dataframes
 from validate_data import validate_data, gap_validation
 from train import perform_multistep_forecasting, detect_index_horizon
-from tqdm import tqdm
-import argparse
 
 
 # Page layout
