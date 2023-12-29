@@ -1,9 +1,5 @@
 import streamlit as st
 import pandas as pd
-from sklearn.model_selection import train_test_split
-from xgboost import XGBRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.datasets import load_diabetes
 from plot import plot_results, plot_wind_speed_vs_active_power
 from preprocessing import split_dataframe_by_wt, delete_ap_nan, remove_outliers_from_dataframes
 from validate_data import validate_data, gap_validation
