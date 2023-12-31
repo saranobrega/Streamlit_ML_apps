@@ -73,6 +73,9 @@ def perform_forecasting(data, pairs, num_lags=3):
         return result_df, merged_df
 
     for index_lightgbm, forecast_horizon in pairs:
+        if index_lightgbm < 40:
+            print(f"Skipping gap filling for pair {index_lightgbm, forecast_horizon}")
+            continue
         df = data.copy()  # Make a copy to avoid modifying the original data
         wf_value = df['WF'].iloc[0]
         wt_value = int(df['WT'].iloc[0])
