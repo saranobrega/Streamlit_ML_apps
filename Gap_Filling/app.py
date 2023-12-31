@@ -47,7 +47,7 @@ def main():
         df = pd.read_csv(uploaded_file)
         df=df[:11000]
         df = df.reset_index(drop=True)
-        st.write(df)
+        #st.write(df)
     
 
 
