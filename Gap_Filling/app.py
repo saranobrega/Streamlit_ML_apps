@@ -109,14 +109,14 @@ def main():
 
         list_of_dfs = []
 
-        for turbine_data in synthetic_data_frames.values():
+        #for turbine_data in synthetic_data_frames.values():
             # Extract DataFrames from the inner dictionary
-            list_of_dfs.extend(turbine_data.values())
+        #    list_of_dfs.extend(turbine_data.values())
 
         # Concatenate the list of DataFrames
-        final_synth_df = pd.concat(list_of_dfs, ignore_index=True)
-        final_synth_df = final_synth_df.sort_values(by=['DATE', 'WT'])
-        final_synth_df = final_synth_df.reset_index(drop=True)
+        #final_synth_df = pd.concat(list_of_dfs, ignore_index=True)
+        #final_synth_df = final_synth_df.sort_values(by=['DATE', 'WT'])
+        #final_synth_df = final_synth_df.reset_index(drop=True)
 
         # st.info('Please upload a CSV file.')
 
