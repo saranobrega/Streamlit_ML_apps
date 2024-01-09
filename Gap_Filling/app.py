@@ -32,7 +32,7 @@ def main():
 
     # Page title and description
     st.write("# Gap Filling Streamlit App")
-    st.write("This app performs gap filling using LightGBM.")
+    st.write("This app performs data gap filling using LightGBM.")
     st.sidebar.header('Parameters')
     learning_rate = st.sidebar.slider('Learning Rate', 0.01, 1.0, 0.05, 0.01)
     max_depth = st.sidebar.slider('Max Depth', 1, 20, 5, 1)
