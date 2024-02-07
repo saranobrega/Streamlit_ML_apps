@@ -48,7 +48,7 @@ def main():
     if use_default_dataset:
         df = load_default_df()
         st.write("## Default Dataset")
-        st.write(df)
+        #st.write(df)
     else:
         # Upload CSV file
         uploaded_file = st.file_uploader("Upload CSV or TXT file", type=["csv", "txt"])
